@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="368dp"
+        android:layout_height="150dp"
+        app:cardElevation="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@android:color/holo_red_dark" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/profile3"
+                android:layout_alignParentRight="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Rohit Bhamu"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:fontFamily="@font/alfa_slab_one" />
+
+            <TextView
+                android:layout_below="@+id/devName"
+                android:id="@+id/devProfession"
+                android:text="Android Developer"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:id="@+id/cardView"
+        app:cardElevation="5dp"
+
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:id="@+id/call_me"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:shadowColor="@android:color/darker_gray"
+                android:id="@+id/getInTouch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:background="@android:color/holo_green_dark"
+                android:drawableBottom="@android:drawable/ic_menu_call"
+                android:textColor="@color/colorWebsiteTab"
+                 />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true">
+
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tabLayoutId"
+            android:background="@color/colorPageTab"
+            android:layout_height="wrap_content">
+//These tabitem is not doing anything att all its all are doing by
+//using of getPageTitle in DevPagerAdapter Java file
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left"
+                />
+
+
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="second"
+                />
+
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Center" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"></android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

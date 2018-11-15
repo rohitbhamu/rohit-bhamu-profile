@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"> Profile </string>
+<string name="hello_blank_fragment">Write something here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_rohit">Hi, my name is Rohit, I am Electical Engineering Student in IIT Mandi. I Love App Development and Web Development.I am a Trekker from heart and I am too passionate about  Super Cars so to fullfill my passion  I work in a club called SUPRA Club there we make Farmula Cars</string>
+    <string name="work">*App Development\n*Watch TV Series\n*Play Cricket\n*Robo Projects</string>
+    <string name="skills">*App Developer\n*iOS Developer\n*Web Developer\n*Solid Works \n*ANSYS\n*Latex\n</string>
+    <string name="contact">8353064425</string>
+</resources>
